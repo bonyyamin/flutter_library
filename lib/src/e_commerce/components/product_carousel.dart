@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_library/src/e_commerce/example_widget/product_carousel_ex.dart' show ProductCard;
-import 'product_card.dart'; // Ensure you have a `ProductCard` widget for displaying products
 
 /// Model for product data
 class Product {
@@ -69,3 +68,35 @@ class ProductCarousel extends StatelessWidget {
     );
   }
 }
+
+
+
+//how to use
+/*
+ProductCarousel(
+  title: "Best Sellers",
+  products: [
+    Product(
+      imageUrl: "https://via.placeholder.com/150",
+      name: "Cool Sneakers",
+      price: 79.99,
+      oldPrice: 99.99,
+      onTap: () => print("Clicked Cool Sneakers"),
+    ),
+    Product(
+      imageUrl: "https://via.placeholder.com/150",
+      name: "Leather Wallet",
+      price: 49.99,
+      onTap: () => print("Clicked Leather Wallet"),
+    ),
+  ],
+)
+*/
+
+
+/*
+Key Features of This Widget:
+✅ Displays Products Horizontally – Great for featured sections.
+✅ Customizable Height & Padding – Allows design flexibility.
+✅ Supports Old Prices – If a discount exists, it displays an old price with a strikethrough.
+*/

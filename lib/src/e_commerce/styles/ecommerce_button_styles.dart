@@ -52,3 +52,57 @@ class EcommerceButtonStyles {
     return Theme.of(context).brightness == Brightness.dark ? (dark ?? primary) : (light ?? secondary);
   }
 }
+
+
+
+// Usage:
+/*
+ElevatedButton(
+  onPressed: () {
+    print("Primary Button Clicked");
+  },
+  style: EcommerceButtonStyles.primary,
+  child: const Text("Primary Button"),
+),
+
+
+ElevatedButton(
+  onPressed: () {
+    print("Secondary Button Clicked");
+  },
+  style: EcommerceButtonStyles.secondary,
+  child: const Text("Secondary Button"),
+),
+
+OutlinedButton(
+  onPressed: () {
+    print("Outline Button Clicked");
+  },
+  style: EcommerceButtonStyles.outline,
+  child: const Text("Outline Button"),
+),
+
+
+ElevatedButton(
+  onPressed: null, // Disabled state
+  style: EcommerceButtonStyles.disabled,
+  child: const Text("Disabled Button"),
+),
+
+ElevatedButton(
+  onPressed: () {
+    print("Dynamic Button Clicked");
+  },
+  style: EcommerceButtonStyles.dynamicStyle(context),
+  child: const Text("Adaptive Button"),
+),
+*/
+
+/*
+Key Features of EcommerceButtonStyles:
+✅ Predefined Button Styles – primary, secondary, outline, and disabled for consistency.
+✅ Customizable Look – Includes padding, rounded corners, text size, and button color.
+✅ Dark & Light Mode Support – dynamicStyle(context) automatically switches themes.
+✅ Reusable Across the App – Ensures uniformity in button design.
+*/
+

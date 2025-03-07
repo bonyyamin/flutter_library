@@ -104,3 +104,12 @@ AddressForm(
   },
 )
 */
+
+
+/*
+Key Features of This Widget:
+✅ Collects Full Address Details – Includes name, phone, street, city, state, and ZIP code.
+✅ Form Validation – Uses validators.dart to validate inputs.
+✅ Auto-Calls onSubmit When Valid – Returns entered address as a Map.
+✅ User-Friendly UI – Uses icons, labels, and clear layout.
+*/

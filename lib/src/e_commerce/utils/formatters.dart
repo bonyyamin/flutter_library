@@ -55,3 +55,12 @@ void main() {
   print(Formatters.truncate('This is a long product description', maxLength: 20)); // Output: This is a long pro...
 }
 */
+
+
+/*
+Key Features of This Code:
+✅ Currency Formatting – Automatically adapts to locale & symbol (USD, EUR, etc.).
+✅ Date & Time Formatting – Supports multiple formats (March 5, 2025, Mar 5, 2025).
+✅ Number Formatting – Adds thousands separators (1,000,000).
+✅ Text Helpers – Includes capitalize and truncate functions for UI display.
+*/

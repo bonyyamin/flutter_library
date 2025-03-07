@@ -43,3 +43,44 @@ class EcommerceCardStyles {
     return Theme.of(context).brightness == Brightness.dark ? (dark ?? elevated) : (light ?? base);
   }
 }
+
+
+
+/*
+            // Default Card Style
+            Container(
+              decoration: EcommerceCardStyles.base,
+              padding: EdgeInsets.all(16.0),
+              child: Text('Default Card Style'),
+            ),
+
+            // Elevated Card Style
+            Container(
+              decoration: EcommerceCardStyles.elevated,
+              padding: EdgeInsets.all(16.0),
+              child: Text('Elevated Card Style'),
+            ),
+
+            // Bordered Card Style
+            Container(
+              decoration: EcommerceCardStyles.bordered,
+              padding: EdgeInsets.all(16.0),
+              child: Text('Bordered Card Style'),
+            ),
+            
+            // Dynamic Card Style (Adapts to Light & Dark mode)
+            Container(
+              decoration: EcommerceCardStyles.dynamicStyle(context),
+              padding: EdgeInsets.all(16.0),
+              child: Text('Dynamic Card Style'),
+            ),
+*/
+
+
+
+/*
+Key Features of This Code:
+✅ Modern & Clean Design – Buttons and cards follow contemporary UI trends.
+✅ Dynamic Styling Support – Can switch between light and dark themes.
+✅ Flexible Button & Card Variations – Includes primary, secondary, outline, disabled buttons, and different card styles.
+*/

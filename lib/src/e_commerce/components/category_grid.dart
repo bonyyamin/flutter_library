@@ -94,3 +94,11 @@ CategoryGrid(
   crossAxisCount: 3, // 3 items per row
 )
 */
+
+
+/*
+Key Features of This Widget:
+✅ Displays Categories in a Grid – Great for category browsing.
+✅ Customizable Grid Layout – Supports dynamic column count and spacing.
+✅ Clickable Items – Each category can navigate to a new page.
+*/

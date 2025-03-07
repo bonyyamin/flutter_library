@@ -169,3 +169,13 @@ ShoppingCartPage(
   onCheckout: () => print("Proceeding to checkout..."),
 )
 */
+
+
+/*
+Key Features of This Page:
+✅ Displays Cart Items with Image, Name, Price & Quantity
+✅ Allows Quantity Increase/Decrease & Item Removal
+✅ Calculates Order Summary with Discounts, Shipping, and Tax
+✅ "Proceed to Checkout" Button for Next Step
+✅ Handles Empty Cart Scenario Gracefully
+*/

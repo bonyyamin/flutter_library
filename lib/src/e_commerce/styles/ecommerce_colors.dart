@@ -50,3 +50,54 @@ class EcommerceColors {
         : (light ?? textSecondary);
   }
 }
+
+
+
+// Usage:
+/*
+Column(
+  children: [
+    ElevatedButton(
+      onPressed: () {},
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all(EcommerceColors.buttonPrimary),
+      ),
+      child: Text(
+        'Primary Button',
+        style: TextStyle(color: Colors.white),
+      ),
+    ),
+    Container(
+      padding: EdgeInsets.all(16.0),
+      color: EcommerceColors.cardBackground,
+      child: Text(
+        'Card Content',
+        style: TextStyle(color: EcommerceColors.textSecondary),
+      ),
+    ),
+    Divider(
+      color: EcommerceColors.divider,
+    ),
+    Text(
+      'Success Message',
+      style: TextStyle(color: EcommerceColors.success),
+    ),
+    Text(
+      'Warning Message',
+      style: TextStyle(color: EcommerceColors.warning),
+    ),
+    Text(
+      'Error Message',
+      style: TextStyle(color: EcommerceColors.error),
+    ),
+  ],
+);
+*/
+
+/*
+Key Features of this Code:
+✅ Modern & Professional Colors – Uses a mix of teal, orange, and deep blue for a fresh eCommerce feel.
+✅ Categorized Colors – Clearly defines primary, secondary, accents, text, buttons, and utility colors.
+✅ Dynamic Theme Support – Provides a method to switch between light and dark themes.
+✅ Opacity Control – A helper method to adjust opacity dynamically.
+*/

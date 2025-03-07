@@ -119,3 +119,13 @@ void main() {
   print(Validators.validateZipCode('12a45')); // Output: "Enter a valid ZIP code"
 }
 */
+
+
+/*
+Key Features of This Code:
+✅ Email Validation – Ensures proper email format (example@domain.com).
+✅ Password Validation – Requires 8+ characters, letters & numbers, and (optional) special characters.
+✅ Phone Number Validation – Accepts only 10-15 digit numbers.
+✅ Credit Card Check – Uses a basic regex match (Luhn algorithm can be added later).
+✅ ZIP Code & Address Validation – Ensures non-empty values.
+*/

@@ -62,3 +62,11 @@ RatingStars(
   color: Colors.amber,
 )
 */
+
+
+/*
+Key Features of This Widget:
+✅ Supports Full & Half Stars – Handles decimal ratings like 4.5.
+✅ Customizable Appearance – Allows setting size, color, and max stars.
+✅ Optional Numeric Rating – Displays 4.5 next to stars if showRatingValue = true.
+*/

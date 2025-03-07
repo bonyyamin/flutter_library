@@ -105,3 +105,11 @@ BannerSlider(
   ],
 )
 */
+
+/*
+Key Features of This Widget:
+✅ Auto-Play Support – Banners cycle automatically (configurable).
+✅ Swipeable Image Slider – Uses carousel_slider package for smooth transitions.
+✅ Clickable Banners – Each banner can have an onTap action.
+✅ Page Indicator Dots – Highlights the active slide dynamically.
+*/

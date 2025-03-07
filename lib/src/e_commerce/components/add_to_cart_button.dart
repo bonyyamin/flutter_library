@@ -60,3 +60,11 @@ AddToCartButton(
   },
 )
 */
+
+
+/*
+Key Features of This Widget:
+✅ Loading State Support – Shows a CircularProgressIndicator when clicked.
+✅ Disables When Processing – Prevents multiple taps.
+✅ Customizable Label – Default: "Add to Cart", but customizable.
+*/

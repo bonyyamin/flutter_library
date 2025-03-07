@@ -144,3 +144,12 @@ class EcommerceTheme {
   themeMode: ThemeMode.system, // Auto-switch based on system setting
   home: YourHomePage(),
 );*/
+
+
+/*
+Key Features of This Code:
+✅ Light & Dark Mode Support – Seamlessly switches between themes.
+✅ Typography Integration – Uses ecommerce_text_styles.dart for consistent fonts.
+✅ UI Consistency – Standardizes AppBar, Buttons, TextFields, and Cards.
+✅ Easily Customizable – Modify colors, borders, or fonts as needed.
+*/

@@ -98,3 +98,11 @@ OrderSummary(
   ),
 )
 */
+
+
+/*
+Key Features of This Widget:
+✅ Displays Subtotal, Discount, Shipping, Tax, and Total
+✅ Handles Negative Discount Values (Red Color)
+✅ Uses Formatters.formatCurrency() for Consistency
+*/

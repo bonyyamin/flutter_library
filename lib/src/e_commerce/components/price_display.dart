@@ -52,3 +52,23 @@ class PriceDisplay extends StatelessWidget {
     );
   }
 }
+
+
+
+//how to use
+/*
+PriceDisplay(
+  price: 49.99,
+  oldPrice: 69.99, // Shows strikethrough discount
+  currencySymbol: '€',
+)
+*/
+
+
+/*
+Key Features of This Widget:
+✅ Formats Prices Dynamically – Uses Formatters.formatCurrency().
+✅ Handles Discounts – Shows old price with a strikethrough if provided.
+✅ Customizable Styles – Allows custom text styles for prices.
+✅ Supports Different Currencies – Defaults to "$", but customizable ("€", "₹", etc.).
+*/

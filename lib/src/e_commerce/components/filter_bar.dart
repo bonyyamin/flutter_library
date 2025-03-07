@@ -124,3 +124,12 @@ FilterBar(
   },
 )
 */
+
+
+/*
+Key Features of This Widget:
+✅ Filter by Category, Price Range, and Rating
+✅ Customizable Categories List
+✅ Interactive Sliders for Price & Rating Selection
+✅ "Apply Filters" Button Triggers Callback Function
+*/

@@ -141,3 +141,12 @@ QuantityAndSizeSelector(
   },
 )
 */
+
+
+/*
+Key Features of This Widget:
+✅ Select Quantity – Users can increase or decrease the quantity.
+✅ Select Size – Supports size selection via ChoiceChip UI.
+✅ Select Color/Variant – Uses color circles for selection.
+✅ Real-time Updates – Calls onSelectionChanged() whenever values change.
+*/

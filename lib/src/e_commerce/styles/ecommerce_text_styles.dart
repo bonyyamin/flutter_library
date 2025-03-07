@@ -67,3 +67,48 @@ class EcommerceTextStyles {
     return Theme.of(context).brightness == Brightness.dark ? (dark ?? bodyText1) : (light ?? bodyText2);
   }
 }
+
+
+// Usage:
+// Text('Default Card Style', style: EcommerceTextStyles.headline1),
+// Text('Elevated Card Style', style: EcommerceTextStyles.headline2),
+// Text('Bordered Card Style', style: EcommerceTextStyles.headline3),
+// Text('Dynamic Card Style', style: EcommerceTextStyles.subtitle1),
+/*
+Column(
+  crossAxisAlignment: CrossAxisAlignment.start,
+  children: [
+    Text(
+      'Welcome to our Store',
+      style: EcommerceTextStyles.headline1,
+    ),
+    Text(
+      'Featured Products',
+      style: EcommerceTextStyles.headline2,
+    ),
+    Text(
+      'This is a great product that you will love!',
+      style: EcommerceTextStyles.bodyText1,
+    ),
+    Text(
+      'Limited stock available.',
+      style: EcommerceTextStyles.caption,
+    ),
+    ElevatedButton(
+      onPressed: () {},
+      child: Text(
+        'Buy Now',
+        style: EcommerceTextStyles.button,
+      ),
+    ),
+  ],
+);
+*/
+
+
+/*
+Key Features of this Code:
+✅ Well-structured typography – Organized from headlines to captions.
+✅ Dynamic Text Styles – Supports light and dark themes dynamically.
+✅ Reusability – Standardized font sizes and weights for consistency.
+*/

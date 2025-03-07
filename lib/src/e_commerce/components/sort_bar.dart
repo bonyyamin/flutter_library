@@ -70,3 +70,11 @@ SortBar(
   },
 )
 */
+
+
+/*
+Key Features of This Widget:
+✅ Sorting Options for Price, Rating, and Popularity
+✅ Dropdown Selection for Easy Sorting
+✅ Triggers Callback When a Sorting Option is Selected
+*/
