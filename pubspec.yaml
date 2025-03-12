@@ -38,6 +38,8 @@ dependencies:
   google_fonts: ^6.2.1
   share_plus: ^10.1.4
   carousel_slider: ^5.0.0
+  just_audio: ^0.9.46
+  marquee: ^2.3.0
 
 dev_dependencies:
   flutter_test:

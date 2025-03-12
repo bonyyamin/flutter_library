@@ -95,6 +95,7 @@ class ProductCard extends StatelessWidget {
 }
 
 
+
 //how to use
 /*
 ProductCard(
@@ -115,6 +116,7 @@ ProductCard(
 */
 
 
+//key features
 /*
 Key Features of This Widget:
 ✅ Displays Product Image, Name, Price, and Rating

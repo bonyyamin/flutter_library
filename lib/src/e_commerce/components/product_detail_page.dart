@@ -1,29 +1,10 @@
 import 'package:flutter/material.dart';
+import '../models/product.dart';
 import '../components/rating_stars.dart';
 import '../components/price_display.dart';
 import '../components/add_to_cart_button.dart';
 import '../styles/ecommerce_colors.dart';
 
-/// Model for a product
-class Product {
-  final String imageUrl;
-  final String name;
-  final double price;
-  final double? oldPrice;
-  final String description;
-  final double rating;
-
-  Product({
-    required this.imageUrl,
-    required this.name,
-    required this.price,
-    this.oldPrice,
-    required this.description,
-    required this.rating,
-  });
-}
-
-/// A full-page product details screen.
 class ProductDetailPage extends StatelessWidget {
   final Product product;
 
@@ -58,17 +39,23 @@ class ProductDetailPage extends StatelessWidget {
                   // Product Name
                   Text(
                     product.name,
-                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   const SizedBox(height: 8),
 
                   // Rating Stars
-                  RatingStars(rating: product.rating, size: 20),
+                  RatingStars(rating: product.rating ?? 0.0, size: 20),
 
                   const SizedBox(height: 12),
 
                   // Price Display
-                  PriceDisplay(price: product.price, oldPrice: product.oldPrice),
+                  PriceDisplay(
+                    price: product.price,
+                    oldPrice: product.oldPrice,
+                  ),
 
                   const SizedBox(height: 16),
 
@@ -79,8 +66,11 @@ class ProductDetailPage extends StatelessWidget {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    product.description,
-                    style: const TextStyle(fontSize: 16, color: EcommerceColors.textSecondary),
+                    product.description ?? '',
+                    style: const TextStyle(
+                      fontSize: 16,
+                      color: EcommerceColors.textSecondary,
+                    ),
                   ),
                 ],
               ),
@@ -100,9 +90,6 @@ class ProductDetailPage extends StatelessWidget {
   }
 }
 
-
-
-
 //how to use
 /*
 Navigator.push(
@@ -121,7 +108,6 @@ Navigator.push(
   ),
 );
 */
-
 
 /*
 Key Features of This Page:

@@ -1,21 +1,69 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_library/src/e_commerce/example_widget/product_carousel_ex.dart' show ProductCard;
+import '../models/product.dart';
 
-/// Model for product data
-class Product {
-  final String imageUrl;
-  final String name;
-  final double price;
-  final double? oldPrice;
-  final VoidCallback onTap;
+class CarouselProductCard extends StatelessWidget {
+  final Product product;
 
-  Product({
-    required this.imageUrl,
-    required this.name,
-    required this.price,
-    this.oldPrice,
-    required this.onTap,
-  });
+  const CarouselProductCard({Key? key, required this.product})
+    : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: product.onTap,
+      child: Card(
+        elevation: 3,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
+              child: Image.network(
+                product.imageUrl,
+                height: 150,
+                width: 150,
+                fit: BoxFit.cover,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    product.name,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 5),
+                  Text(
+                    '\$${product.price}',
+                    style: TextStyle(
+                      fontSize: 14,
+                      color:
+                          product.oldPrice != null ? Colors.red : Colors.green,
+                    ),
+                  ),
+                  if (product.oldPrice != null)
+                    Text(
+                      '\$${product.oldPrice}',
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Colors.grey,
+                        decoration: TextDecoration.lineThrough,
+                      ),
+                    ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
 
 /// A horizontal scrolling product carousel.
@@ -54,13 +102,7 @@ class ProductCarousel extends StatelessWidget {
             separatorBuilder: (_, __) => const SizedBox(width: 10),
             itemBuilder: (context, index) {
               final product = products[index];
-              return ProductCard(
-                imageUrl: product.imageUrl,
-                name: product.name,
-                price: product.price,
-                oldPrice: product.oldPrice,
-                onTap: product.onTap,
-              );
+              return CarouselProductCard(product: product);
             },
           ),
         ),
@@ -68,35 +110,3 @@ class ProductCarousel extends StatelessWidget {
     );
   }
 }
-
-
-
-//how to use
-/*
-ProductCarousel(
-  title: "Best Sellers",
-  products: [
-    Product(
-      imageUrl: "https://via.placeholder.com/150",
-      name: "Cool Sneakers",
-      price: 79.99,
-      oldPrice: 99.99,
-      onTap: () => print("Clicked Cool Sneakers"),
-    ),
-    Product(
-      imageUrl: "https://via.placeholder.com/150",
-      name: "Leather Wallet",
-      price: 49.99,
-      onTap: () => print("Clicked Leather Wallet"),
-    ),
-  ],
-)
-*/
-
-
-/*
-Key Features of This Widget:
-✅ Displays Products Horizontally – Great for featured sections.
-✅ Customizable Height & Padding – Allows design flexibility.
-✅ Supports Old Prices – If a discount exists, it displays an old price with a strikethrough.
-*/

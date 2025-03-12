@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import '../styles/ecommerce_colors.dart';
-
 /// Callback function when a sorting option is selected.
 typedef SortCallback = void Function(String sortBy);
 
